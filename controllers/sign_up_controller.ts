@@ -6,6 +6,8 @@ import User from "../models/User";
 import Validator from "../utils/validator";
 
 const signUp = async (req: any, res: any) => {
+  console.log("hello server")
+  console.log(req)
   try {
     // Generating a random id
     const name: string = req.body.name;
